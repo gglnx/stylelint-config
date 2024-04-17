@@ -1,0 +1,32 @@
+{
+  "name": "@gglnx/stylelint-config",
+  "version": "1.0.0",
+  "description": "Shared Stylelint configuration",
+  "main": "index.mjs",
+  "author": "Dennis Morhardt <info@dennismorhardt.de>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gglnx/stylelint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gglnx/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/gglnx/stylelint-config#readme",
+  "peerDependencies": {
+    "stylelint": "^16.3",
+    "stylelint-config-sass-guidelines": "^11.0",
+    "stylelint-order": "^6.0",
+    "stylelint-scss": "^6.2",
+    "stylelint-use-logical": "^2.1"
+  },
+  "devDependencies": {
+    "@gglnx/eslint-config": "^1.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives ."
+  },
+  "files": [
+    "index.mjs"
+  ]
+}
