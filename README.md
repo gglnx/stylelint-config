@@ -31,13 +31,13 @@ Create an `.stylelintrc` file in your project root:
 * `order/order`: Custom order inside selectors:
   1. SCSS variables
   2. `@extend` at-rules
-  3. `@include use-*` at-rules
-  4. Custom properties
-  5. Declarations
-  6. Nested rules beginning with `&`
-  7. Nested rules for pseudo-classes (like `:hover`)
-  8. Nested rules for pseudo-elements (`::before/::after`)
-  9. Other rules and at-rules
+  3. Custom properties
+  4. Declarations
+  5. Nested rules beginning with `&`
+  6. Nested rules for pseudo-classes (like `:hover`)
+  7. Nested rules for pseudo-elements (`::before/::after`)
+  8. Other nested rules
+  9. At-rules (like @media, @include or @container)
 
 ## Contributing
 

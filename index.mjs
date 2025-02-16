@@ -32,11 +32,6 @@ export default {
           type: 'at-rule',
           name: 'extend',
         },
-        {
-          type: 'at-rule',
-          name: 'include',
-          parameter: '^use-.*',
-        },
         'custom-properties',
         'declarations',
         {
@@ -54,22 +49,6 @@ export default {
         'rules',
         {
           type: 'at-rule',
-        },
-        {
-          type: 'at-rule',
-          name: 'include',
-          parameter: 'mq',
-          hasBlock: true,
-        },
-        {
-          type: 'at-rule',
-          name: 'container',
-          hasBlock: true,
-        },
-        {
-          type: 'at-rule',
-          name: 'media',
-          hasBlock: true,
         },
       ],
     ],
