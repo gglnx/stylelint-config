@@ -7,6 +7,26 @@ export default {
     'stylelint-scss',
   ],
   rules: {
+    'comment-empty-line-before': [
+      'always',
+      { except: ['first-nested'] },
+    ],
+    'rule-empty-line-before': [
+      'always',
+      { except: ['after-single-line-comment', 'first-nested'] },
+    ],
+    'at-rule-empty-line-before': [
+      'always',
+      { except: ['blockless-after-blockless', 'first-nested'], ignore: ['after-comment'] },
+    ],
+    'declaration-empty-line-before': [
+      'always',
+      { except: ['after-comment', 'after-declaration', 'first-nested'] },
+    ],
+    'custom-property-empty-line-before': [
+      'always',
+      { except: ['after-comment', 'after-custom-property', 'first-nested'] },
+    ],
     'csstools/use-logical': [true, {
       except: ['float'],
     }],
