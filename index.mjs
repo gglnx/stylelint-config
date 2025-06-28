@@ -17,7 +17,7 @@ export default {
     ],
     'at-rule-empty-line-before': [
       'always',
-      { except: ['blockless-after-blockless', 'first-nested'], ignore: ['after-comment'] },
+      { except: ['blockless-after-blockless', 'first-nested'], ignore: ['after-comment'], ignoreAtRules: ['else'] },
     ],
     'declaration-empty-line-before': [
       'always',
@@ -27,6 +27,18 @@ export default {
       'always',
       { except: ['after-comment', 'after-custom-property', 'first-nested'] },
     ],
+    '@stylistic/at-rule-name-space-after': 'always',
+    '@stylistic/block-opening-brace-space-before': 'always',
+    '@stylistic/block-closing-brace-newline-after': [
+      'always', {
+        ignoreAtRules: ['if', 'else'],
+      },
+    ],
+    'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
+    'scss/at-else-closing-brace-space-after': 'always-intermediate',
+    'scss/at-else-empty-line-before': 'never',
+    'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
+    'scss/at-if-closing-brace-space-after': 'always-intermediate',
     'csstools/use-logical': [true, {
       except: ['float'],
     }],
