@@ -1,6 +1,6 @@
 {
   "name": "@gglnx/stylelint-config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Shared Stylelint configuration",
   "main": "index.mjs",
   "author": "Dennis Morhardt <info@dennismorhardt.de>",
