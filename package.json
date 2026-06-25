@@ -21,7 +21,7 @@
     "stylelint-use-logical": "^2"
   },
   "devDependencies": {
-    "@gglnx/eslint-config": "^1.0.3"
+    "@gglnx/eslint-config": "^2.0.0-beta.1"
   },
   "scripts": {
     "test": "eslint --report-unused-disable-directives ."

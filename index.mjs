@@ -43,10 +43,10 @@ export default {
       except: ['float'],
     }],
     'selector-max-compound-selectors': 4,
-    // eslint-disable-next-line max-len
+    // eslint-disable-next-line @stylistic/max-len
     'selector-class-pattern': ['^(?:(?:(?<type>has|u|js|is)-(?<util>(?!(has|u|js|is|t)-+)(?:[a-z]|(?<!-)-(?!-))+))|(?:t-(?<theme>(?!t-+)(?:[a-z0-9]|(?<!-)-(?!-))+))|(?<block>(?!(has|u|js|t)-+)(?:[a-z]|(?<!-)-(?!-))+)(?:__(?<element>(?:[a-z]|(?<!-)-(?!-))+))?(?:--(?<modifier>(?:[a-z0-9]|(?<!-)-(?!-))+))?)$', {
       resolveNestedSelectors: true,
-      message: "Class pattern \"%s\" doesn't match BEM rules",
+      message: 'Class pattern "%s" doesn\'t match BEM rules',
     }],
     'max-nesting-depth': [1, {
       ignore: ['blockless-at-rules', 'pseudo-classes'],
@@ -72,11 +72,11 @@ export default {
         },
         {
           type: 'rule',
-          selector: '&:[\\w-]+|&\\[(.*?)\\]',
+          selector: String.raw`&:[\w-]+|&\[(.*?)\]`,
         },
         {
           type: 'rule',
-          selector: '&::[\\w-]+',
+          selector: String.raw`&::[\w-]+`,
         },
         'rules',
         {
