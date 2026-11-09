@@ -1,3 +1,5 @@
+import selectorNoType from './plugins/selector-no-type.mjs';
+
 /** @type {import('stylelint').Config} */
 export default {
   extends: 'stylelint-config-sass-guidelines',
@@ -5,6 +7,7 @@ export default {
     'stylelint-order',
     'stylelint-use-logical',
     'stylelint-scss',
+    selectorNoType,
   ],
   rules: {
     'comment-empty-line-before': [
@@ -43,6 +46,10 @@ export default {
       except: ['float'],
     }],
     'selector-max-compound-selectors': 4,
+    'selector-no-qualifying-type': null,
+    'gglnx/selector-no-type': [true, {
+      ignoreStandaloneTypes: ['html', 'body'],
+    }],
     // eslint-disable-next-line @stylistic/max-len
     'selector-class-pattern': ['^(?:(?:(?<type>has|u|js|is)-(?<util>(?!(has|u|js|is|t)-+)(?:[a-z]|(?<!-)-(?!-))+))|(?:t-(?<theme>(?!t-+)(?:[a-z0-9]|(?<!-)-(?!-))+))|(?<block>(?!(has|u|js|t)-+)(?:[a-z]|(?<!-)-(?!-))+)(?:__(?<element>(?:[a-z]|(?<!-)-(?!-))+))?(?:--(?<modifier>(?:[a-z0-9]|(?<!-)-(?!-))+))?)$', {
       resolveNestedSelectors: true,

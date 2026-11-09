@@ -25,6 +25,9 @@ Create an `.stylelintrc` file in your project root:
 * `csstools/use-logical`: Use logical props (except for float)
 * `selector-max-compound-selectors`: Limited to 4 compound selectors
 * `selector-class-pattern`: Allows only the BEM naming scheme (`.block__element--modifier`) and helper and theming classes (`.has-*`, `.u-*`, `.js-*`, `.is-*`, `.t-*`)
+* `selector-no-qualifying-type`: Replaced by `gglnx/selector-no-type`, which disallows type selectors (`button`, `.foo button`, `button.foo`, `:is(a, button)`) except:
+  * as the subject of `:is()`, `:not()` or `:has()` attached to a class, id or attribute selector (`.foo:is(button, a)`, `.foo:not(button)`, `.foo:has(> img)`, `.foo { &:is(button) {} }`)
+  * unqualified `html` and `body` (configurable via the `ignoreStandaloneTypes` option, strings or regular expressions)
 * `max-nesting-depth`: Limits to one nesting level except for pseudo-classes, at-rules and theming classes (`.t-*`)
 * `property-no-unknown`: Adds allowance for `:export` property (CSS modules)
 * `order/properties-alphabetical-order`: Enforce alphabetical order for all properties

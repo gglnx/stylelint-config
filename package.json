@@ -13,6 +13,9 @@
     "url": "https://github.com/gglnx/stylelint-config/issues"
   },
   "homepage": "https://github.com/gglnx/stylelint-config#readme",
+  "dependencies": {
+    "postcss-selector-parser": "^7.1.4"
+  },
   "peerDependencies": {
     "stylelint": "^17",
     "stylelint-config-sass-guidelines": "^13",
@@ -27,6 +30,7 @@
     "test": "eslint --report-unused-disable-directives ."
   },
   "files": [
-    "index.mjs"
+    "index.mjs",
+    "plugins"
   ]
 }
